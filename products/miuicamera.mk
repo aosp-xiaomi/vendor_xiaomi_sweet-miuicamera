@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    MiuiCamera
+
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml

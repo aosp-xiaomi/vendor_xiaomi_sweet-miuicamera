@@ -16,11 +16,11 @@
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/garnet-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
+    vendor/xiaomi/sweet-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/garnet-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
+    vendor/xiaomi/sweet-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -28,4 +28,4 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.com.google.lens.oem_camera_package=com.android.camera \
     vendor.camera.aux.packagelist=com.android.camera
 
-$(call inherit-product, vendor/xiaomi/garnet-miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sweet-miuicamera/common/common-vendor.mk)

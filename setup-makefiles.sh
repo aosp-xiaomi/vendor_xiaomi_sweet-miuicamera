@@ -9,7 +9,7 @@
 set -e
 
 DEVICE=common
-VENDOR=xiaomi/garnet-miuicamera
+VENDOR=xiaomi/sweet-miuicamera
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -30,11 +30,11 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 # Warning headers and guards
 write_headers "arm64"
 sed -i 's|TARGET_DEVICE|TARGET_ARCH|g' "${ANDROIDMK}"
-sed -i 's|vendor/xiaomi/garnet-miuicamera/|vendor/xiaomi/garnet-miuicamera/common|g' "${PRODUCTMK}"
-sed -i 's|device/xiaomi/garnet-miuicamera//setup-makefiles.sh|vendor/xiaomi/garnet-miuicamera/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+sed -i 's|vendor/xiaomi/sweet-miuicamera/|vendor/xiaomi/sweet-miuicamera/common|g' "${PRODUCTMK}"
+sed -i 's|device/xiaomi/sweet-miuicamera//setup-makefiles.sh|vendor/xiaomi/sweet-miuicamera/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
-sed -i 's|"xiaomi/garnet-miuicamera"|"xiaomi"|g' "${ANDROIDBP}"
+sed -i 's|"xiaomi/sweet-miuicamera"|"xiaomi"|g' "${ANDROIDBP}"
 
 # Finish
 write_footers

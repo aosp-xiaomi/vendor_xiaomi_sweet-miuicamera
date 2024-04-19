@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-include vendor/xiaomi/garnet-miuicamera/common/BoardConfigVendor.mk
+include vendor/xiaomi/sweet-miuicamera/common/BoardConfigVendor.mk

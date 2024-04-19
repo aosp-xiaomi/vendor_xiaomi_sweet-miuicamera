@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system/lib64/libmicampostproc_client.so)
+            "${PATCHELF}" --remove-needed "libhidltransport.so" "${2}"
+            ;;
     esac
 }
 

@@ -1,0 +1,5 @@
+type hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
+type hal_misys_hwservice, hwservice_manager_type;
+
+allow platform_app hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+allow platform_app hal_misys_hwservice:hwservice_manager find;

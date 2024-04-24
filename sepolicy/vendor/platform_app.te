@@ -3,3 +3,8 @@ type hal_misys_hwservice, hwservice_manager_type;
 
 allow platform_app hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
 allow platform_app hal_misys_hwservice:hwservice_manager find;
+
+# Properties
+get_prop(platform_app, vendor_audio_prop)
+get_prop(platform_app, vendor_display_prop)
+get_prop(platform_app, vendor_fp_prop)

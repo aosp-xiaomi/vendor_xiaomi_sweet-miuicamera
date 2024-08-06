@@ -1,6 +1,6 @@
 # These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.9.0.TKFMIXM, unless pinned
 
--product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Snap,Camera2,GoogleCameraGo|fe54dca23b0a1f95cb8e659b4af7662fd7d82df5
+-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Snap,Camera2,GoogleCameraGo
 -system/lib64/libcamera_algoup_jni.xiaomi.so
 -system/lib64/libcamera_mianode_jni.xiaomi.so
 -system/lib64/libmicampostproc_client.so

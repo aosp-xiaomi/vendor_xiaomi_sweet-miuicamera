@@ -1,0 +1,61 @@
+--- a/smali_classes2/com/xiaomi/protocol/ICustomCaptureResult.smali
++++ b/smali_classes2/com/xiaomi/protocol/ICustomCaptureResult.smali
+@@ -346,7 +346,7 @@
+ .end method
+ 
+ .method public static toTotalCaptureResult(Lcom/xiaomi/protocol/ICustomCaptureResult;IZ)Landroid/hardware/camera2/TotalCaptureResult;
+-    .locals 23
++    .locals 27
+ 
+     const-string v0, "android.hardware.camera2.impl.PhysicalCaptureResultInfo"
+ 
+@@ -434,7 +434,7 @@
+ 
+     if-lt v7, v8, :cond_0
+ 
+-    const/16 v7, 0xb
++    const/16 v7, 0xd
+ 
+     :try_start_1
+     new-array v8, v7, [Ljava/lang/Class;
+@@ -488,6 +488,18 @@
+ 
+     aput-object v19, v8, v21
+ 
++    sget-object v19, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
++
++    const/16 v23, 0xb
++
++    aput-object v19, v8, v23
++
++    sget-object v19, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
++
++    const/16 v24, 0xc
++
++    aput-object v19, v8, v24
++
+     .line 8
+     invoke-virtual {v1, v8}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+ 
+@@ -565,6 +577,22 @@
+ 
+     aput-object v19, v7, v21
+ 
++    const/16 v25, 0x0
++
++    invoke-static/range {v25 .. v25}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
++
++    move-result-object v19
++
++    aput-object v19, v7, v23
++
++    const/16 v26, 0x0
++
++    invoke-static/range {v26 .. v26}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
++
++    move-result-object v19
++
++    aput-object v19, v7, v24
++
+     .line 11
+     invoke-virtual {v8, v7}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;

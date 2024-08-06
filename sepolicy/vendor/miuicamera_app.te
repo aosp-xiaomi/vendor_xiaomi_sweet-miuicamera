@@ -12,4 +12,6 @@ allow miuicamera_app {
     mediaserver_service
 }:service_manager find;
 
+allow miuicamera_app proc_stat:file r_file_perms;
+
 dontaudit miuicamera_app radio_service:service_manager find;

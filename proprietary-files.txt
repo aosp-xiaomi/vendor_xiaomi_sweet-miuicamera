@@ -5,5 +5,3 @@
 -system/lib64/libcamera_mianode_jni.xiaomi.so
 -system/lib64/libmicampostproc_client.so
 -system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
--vendor/lib64/libarcdualcamsat.so
--vendor/lib64/libarcsat.so

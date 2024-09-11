@@ -16,10 +16,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so"],
+			shared_libs: ["libgui_shim_miuicamera", "libandroid", "libandroid_runtime", "libbase", "libbinder", "libcamera_client", "libcamera_metadata", "libcutils", "libgui", "liblog", "libmedia_jni_utils", "libnativehelper", "libnativewindow", "libui", "libutils", "libvndksupport", "android.hidl.token@1.0-utils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 }
 
@@ -32,10 +32,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so"],
+			shared_libs: ["libgui_shim_miuicamera", "libandroid", "libbinder", "libcamera_client", "libcamera_metadata", "libcutils", "libgui", "liblog", "libmedia_jni_utils", "libui", "libutils", "libvndksupport", "libxml2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 }
 
@@ -48,10 +48,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libmicampostproc_client.so"],
+			shared_libs: ["liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libGLESv2", "libfmq", "libgui", "libui", "libcamera_client", "libcamera_metadata", "libmedia_jni_utils", "libnativehelper", "libhidlbase", "vendor.xiaomi.hardware.campostproc@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 }
 
@@ -64,10 +64,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so"],
+			shared_libs: ["android.hardware.camera.common@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 }
 
